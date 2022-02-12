@@ -18,13 +18,57 @@ a {
 li {
 	list-style: none;
 }
-/* header  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+*::after::before {
+	box-sizing: border-box;
+}
+.container {
+	width: 1280px;
+	padding-left: 55px;
+	padding-right: 55px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+/*================= header ================== */
+.header .container {
+	display: flex;
+	align-items: center;
+}
 .site-nav {
+	display: flex;
+
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1.33;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+}
+.menu-nav {
+	display: flex;
+	align-items: center;
+}
+.item-nav {
+	margin-left: 40px;
 }
 .link-nav {
 	color: var(--white-text-color);
@@ -34,6 +78,9 @@ li {
 	color: var(--accent-text-color);
 }
 .tel-nav {
+	margin-right: 40px;
+	margin-left: auto;
+
 	color: var(--white-text-color);
 
 	font-weight: 600;
@@ -46,8 +93,12 @@ li {
 .tel:focus {
 	color: var(--accent-text-color);
 }
+.btn-nav {
+	margin-right: 3px;
+}
 .btn-nav,
 .btn-prices {
+	padding: 12px 20px;
 	color: var(--white-text-color);
 	background-color: transparent;
 
@@ -57,6 +108,9 @@ li {
 	text-transform: uppercase;
 	letter-spacing: 0.09em;
 	cursor: pointer;
+
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
 }
 .btn-nav:hover,
 .btn-nav:focus,
@@ -65,7 +119,7 @@ li {
 	background-color: var(--accent-text-color);
 }
 
-/* hero */
+/* ====================hero================= */
 .header,
 .hero {
 	background-color: #555555;
@@ -103,16 +157,24 @@ li {
 	font-size: 18px;
 	line-height: 1.66;
 }
-/* about us */
-.title-about {
-	color: var(--primary-text-color);
-
-	font-family: Raleway;
-	font-size: 42px;
-	line-height: 1.16;
-	letter-spacing: 0.05em;
+/* ===================about us=================== */
+.section-about .container {
+	display: flex;
 }
-.text-about-one {
+.menu-about {
+	display: flex;
+}
+.item-about:not(:last-child) {
+	margin-right: 30px;
+}
+.description-about {
+	width: 500px;
+	margin-left: 64px;
+}
+
+.over-title-about {
+	margin-bottom: 20px;
+
 	color: var(--primary-text-color);
 
 	font-weight: 600;
@@ -121,18 +183,34 @@ li {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
-.text-about-two {
+.title-about {
+	margin-bottom: 20px;
+
+	color: var(--primary-text-color);
+
+	font-family: Raleway;
+	font-size: 42px;
+	line-height: 1.16;
+	letter-spacing: 0.05em;
+}
+.under-title-about {
+	margin-bottom: 20px;
+
 	color: var(--tertiary-text-color);
 
 	font-size: 18px;
 	line-height: 1.66;
 }
-.text-about-three {
+.text-about {
+	margin-bottom: 40px;
+
 	color: var(--tertiary-text-color);
 	font-size: 14px;
 	line-height: 26px;
 }
 .btn-about {
+	padding: 12px 20px;
+
 	color: var(--primary-text-color);
 	background-color: transparent;
 
@@ -141,14 +219,22 @@ li {
 	line-height: 1.33;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
+
+	border: 1px solid #ff6c00;
+	border-radius: 25px;
 }
 .btn-about:hover,
 .btn-about:focus {
 	color: var(--white-text-color);
 	background-color: var(--accent-text-color);
 }
-/* prices */
-.text-prices {
+/* ====================prices ==================*/
+.section-prices {
+	background-color: #111319;
+}
+.over-title-prices {
+	margin-bottom: 20px;
+
 	color: var(--secondary-alfa-text-color);
 
 	font-weight: 600;
@@ -158,6 +244,8 @@ li {
 	text-transform: uppercase;
 }
 .title-prices {
+	margin-bottom: 74px;
+
 	color: var(--white-text-color);
 
 	font-family: Raleway;
@@ -165,7 +253,9 @@ li {
 	line-height: 1.16;
 	letter-spacing: 0.05em;
 }
-.list-prices {
+.menu-prices {
+	display: flex;
+
 	color: var(--secondary-text-color);
 
 	font-size: 18px;
