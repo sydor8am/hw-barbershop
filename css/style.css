@@ -11,6 +11,7 @@
 body {
 	font-family: Open Sans, sans-serif;
 	letter-spacing: 0.02em;
+	background-color: #fff;
 }
 a {
 	text-decoration: none;
@@ -47,6 +48,18 @@ img {
 .section {
 	padding-top: 130px;
 	padding-bottom: 130px;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /*================= header ================== */
@@ -261,9 +274,35 @@ img {
 	font-size: 18px;
 	line-height: 1.66;
 }
-/* why come to us */
+/* ================== why come to us ================ */
+.container-why {
+	display: flex;
+}
+.menu-why {
+	display: flex;
+}
+.column-why-first {
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;
+	margin-top: -9px;
+	margin-left: 155px;
+}
+.column-why-second {
+	display: flex;
+	flex-direction: column;
+	margin-top: 26px;
+	margin-right: 130px;
+}
 .item-why {
+	padding: 18px;
+	text-align: center;
+	width: 170px;
+	height: 130px;
 	background-color: var(--bg-color);
+}
+.item-why:not(:last-child) {
+	margin-bottom: 30px;
 }
 .text-why-number {
 	color: var(--primary-text-color);
@@ -280,7 +319,9 @@ img {
 	font-size: 11px;
 	line-height: 1.36;
 }
-.text-why-two {
+.over-title-why {
+	margin-bottom: 20px;
+
 	color: var(--primary-text-color);
 
 	font-weight: 600;
@@ -290,23 +331,27 @@ img {
 	text-transform: uppercase;
 }
 .title-why {
+	margin-bottom: 20px;
+
 	color: var(--primary-text-color);
 
 	font-size: 42px;
 	line-height: 1.16;
 	letter-spacing: 0.05em;
 }
-.text-why-three {
+.description-why {
 	color: var(--tertiary-text-color);
 
 	font-size: 18px;
 	line-height: 1.66;
 }
-/* masters */
+/* ================== masters ================= */
 .section-masters {
 	background-color: var(--bg-color);
 }
 .text-masters {
+	margin-bottom: 20px;
+
 	color: var(--primary-text-color);
 
 	font-weight: 600;
@@ -316,6 +361,8 @@ img {
 	text-transform: uppercase;
 }
 .title-masters {
+	margin-bottom: 44px;
+
 	color: var(--primary-text-color);
 
 	font-family: Raleway;
@@ -323,20 +370,46 @@ img {
 	line-height: 1.16;
 	letter-spacing: 0.05em;
 }
+.menu-masters {
+	display: flex;
+}
+
+.item-masters {
+	text-align: center;
+}
+.item-masters:not(:last-child) {
+	margin-right: 30px;
+}
+.item-masters > img {
+	margin-bottom: 30px;
+}
 .subtitle-masters {
+	margin-bottom: 8px;
+
 	color: var(--primary-text-color);
 
 	font-size: 18px;
 	line-height: 1.39;
 }
 .position-masters {
+	margin-bottom: 30px;
+
 	color: var(--accent-text-color);
 
 	font-size: 14px;
 	line-height: 1.36px;
 }
-/* what is barber */
+.list-socialnet {
+	display: flex;
+	justify-content: center;
+}
+.item-socialnet:not(:last-child) {
+	margin-right: 10px;
+}
+/* ==================== what is barber ================  */
 .text-what {
+	margin-bottom: 44px;
+
 	color: var(--primary-text-color);
 
 	font-weight: 600;
@@ -344,6 +417,12 @@ img {
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+}
+.menu-what {
+	display: flex;
+}
+.item-what:not(:last-child) {
+	margin-right: 30px;
 }
 /* registration */
 .title-reg,
