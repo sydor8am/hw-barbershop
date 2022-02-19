@@ -16,8 +16,10 @@
     <header class="header">
         <div class="container ">
             <nav class="site-nav">
-                <a href="/">
-                    <img src="./images/Logo.svg" alt="Лого сайта">
+                <a class="link-logo" href="">
+                    <svg class="logo" width="66" hight="56">
+                        <use href="./images/sprite.svg#icon-logo"></use>
+                    </svg>
                 </a>
                 <ul class="menu-nav">
                     <li class="item-nav">
@@ -41,18 +43,22 @@
     <main>
         <!--================== hero ===================-->
         <section class="section hero">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a class="link-hero" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
-                    </li>
-                    <li>
-                        <a class="link-hero" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    </li>
-                </ul>
-                <p class="description-hero-one" lang="en">A hair salon for men in Kyiv</p>
-                <h1 class="title-hero" lang="en">BarberShop</h1>
-                <p class="description-hero-two">Мы эксперты в модных мужских стрижках.<br>Работаем быстро, осторожно и со вкусом.</p>
+            <div class="container hero-container">
+                <div class="hero-left-side">
+                    <ul class="menu-hero">
+                        <li class="item-hero">
+                            <a class="link-hero" href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+                        </li>
+                        <li class="item-hero">
+                            <a class="link-hero" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-right-side">
+                    <p class="description-hero-one" lang="en">A hair salon for men in Kyiv</p>
+                    <h1 class="title-hero" lang="en">BarberShop</h1>
+                    <p class="description-hero-two">Мы эксперты в модных мужских стрижках.<br>Работаем быстро, осторожно и со вкусом.</p>
+                </div>
             </div>
         </section>
         <!--================== about us==================== -->
@@ -84,47 +90,47 @@
         </section>
         <!-- ================== price =======================-->
         <section class="section section-prices" id="prices">
-            <div class="container">
+            <div class="container">                
                 <p class="over-title-prices">Проведи время в компании лучших мастеров</p>
                 <h2 class="title-prices">Услуги и цены</h2>
-                <ul class="menu-prices">
-                    <div class="block-one-prices">
-                        <li>
-                            <p>Мужская стрижка</p>
-                            <p>от 300 грн.</p>
+                <div class="wrapper-prices">
+                    <ul class="menu-prices menu-left">
+                        <li class="item-prices">
+                            <span class="name">Мужская стрижка</span>
+                            <span class="price">от 300 грн.</span>
                         </li>
-                        <li>
-                            <p>Стрижка бороды</p>
-                            <p>от 200 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Стрижка бороды</span>
+                            <span class="price">от 200 грн.</span>
                         </li>
-                        <li>
-                            <p>Стрижка усов</p>
-                            <p>от 200 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Стрижка усов</span>
+                            <span class="price">от 200 грн.</span>
                         </li>
-                        <li>
-                            <p>Бритье опасной бритвой</p>
-                            <p>от 200 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Бритье опасной бритвой</span>
+                            <span class="price">от 200 грн.</span>
                         </li>
-                    </div>
-                    <div class="block-two-prices">
-                        <li>
-                            <p>Cтрижка у стажера</p>
-                            <p>от 50 грн.</p>
+                    </ul>
+                    <ul class="menu-prices menu-right">
+                        <li class="item-prices">
+                            <span class="name">Cтрижка у стажера</span>
+                            <span class="price">от 50 грн.</span>
                         </li>
-                        <li>
-                            <p>Стрижка под насадку</p>
-                            <p>от 200 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Стрижка под насадку</span>
+                            <span class="price">от 200 грн.</span>
                         </li>
-                        <li>
-                            <p>Детская стрижка (до 12 лет)</p>
-                            <p>от 300 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Детская стрижка (до 12 лет)</span>
+                            <span class="price">от 300 грн.</span>
                         </li>
-                        <li>
-                            <p>Камуфлирование седины</p>
-                            <p>от 200 грн.</p>
+                        <li class="item-prices">
+                            <span class="name">Камуфлирование седины</span>
+                            <span class="price">от 200 грн.</span>
                         </li>
-                    </div>
-                </ul>
+                    </ul>
+                </div>
                 <button class="btn-prices" type="button">онлайн-запись</button>
             </div>
         </section>
@@ -175,23 +181,31 @@
                             <p class="position-masters" lang="en">Extreme Barber</p>
                             <ul class="list-socialnet">
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/instagram-icon.svg" alt="Instagram">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/twitter-icon.svg" alt="Twitter">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/facebook-icon.svg" alt="Facebook">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/linkedin-icon.svg" alt="LinkedIn">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -204,23 +218,31 @@
                             <p class="position-masters" lang="en">Extreme Barber</p>
                             <ul class="list-socialnet">
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/instagram-icon.svg" alt="Instagram">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/twitter-icon.svg" alt="Twitter">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/facebook-icon.svg" alt="Facebook">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/linkedin-icon.svg" alt="LinkedIn">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -233,23 +255,31 @@
                             <p class="position-masters" lang="en">Extreme Barber</p>
                             <ul class="list-socialnet">
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/instagram-icon.svg" alt="Instagram">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-instagram"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/twitter-icon.svg" alt="Twitter">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-twitter"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/facebook-icon.svg" alt="Facebook">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-facebook"></use>
+                                        </svg>
                                     </a>
                                 </li>
                                 <li class="item-socialnet">
-                                    <a href="">
-                                        <img src="./images/linkedin-icon.svg" alt="LinkedIn">
+                                    <a class="link-socialnet" href="">
+                                        <svg class="icon-socialnet" width="20" height="20">
+                                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
